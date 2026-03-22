@@ -14,8 +14,8 @@ export const Bio = {
   description:
     "B.Tech CSE student from Lovely Professional University focused on building scalable web applications and solving algorithmic problems. Based in Sonbhadra, Uttar Pradesh.",
   github: "https://github.com/ananya411/",
-  resume: "https://www.linkedin.com/in/ananyajaiswal",
-  linkedin: "https://www.linkedin.com/in/ananyajaiswal",
+  resume: "https://www.linkedin.com/in/ananya-jaiswal-688b9a27b/",
+  linkedin: "https://www.linkedin.com/in/ananya-jaiswal-688b9a27b/",
   email: "ananyasbr06@gmail.com",
   phone: "+91 8707704258",
   location: "Sonbhadra, Uttar Pradesh 231216",
