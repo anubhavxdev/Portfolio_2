@@ -1,17 +1,14 @@
-
 import React from "react";
-import { VerticalTimeline } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import styled from "styled-components";
-import { experiences } from "../../data/constants";
-import ExperienceCard from "../cards/ExperienceCard";
+import { projects } from "../../data/constants";
+import ProjectCard from "../cards/ProjectCard";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-contnet: center;
   margin-top: 50px;
-  position: rlative;
+  position: relative;
   z-index: 1;
   align-items: center;
 `;
@@ -25,10 +22,8 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1100px;
   gap: 12px;
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
 `;
+
 const Title = styled.div`
   font-size: 52px;
   text-align: center;
@@ -40,6 +35,7 @@ const Title = styled.div`
     font-size: 32px;
   }
 `;
+
 const Desc = styled.div`
   font-size: 18px;
   text-align: center;
@@ -50,30 +46,34 @@ const Desc = styled.div`
   }
 `;
 
-const Experience = () => {
+const Cards = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+`;
+
+const Projects = () => {
   return (
-    <Container id="Experience">
+    <Container id="Projects">
       <Wrapper>
-        <Title>Training & Achievements</Title>
+        <Title>Projects</Title>
         <Desc
           style={{
             marginBottom: "40px",
           }}
         >
-          Highlights from summer training, community leadership, and competitive programming milestones.
+          Featured full-stack and machine-learning projects.
         </Desc>
-
-        <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
-            />
+        <Cards>
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
           ))}
-        </VerticalTimeline>
+        </Cards>
       </Wrapper>
     </Container>
   );
 };
 
-export default Experience;
+export default Projects;

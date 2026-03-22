@@ -4,12 +4,12 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Sections/Hero";
 import { BrowserRouter } from "react-router-dom";
 import Skills from "./components/Sections/Skills";
+import Projects from "./components/Sections/Projects";
+import Certificates from "./components/Sections/Certificates";
 import Experience from "./components/Sections/Experience";
 import Education from "./components/Sections/Eduaction";
 import Contact from "./components/Sections/Contact";
 import Footer from "./components/Sections/Footer";
-import Sparkles from "./assets/sss";
-import Snowfall from "react-snowfall";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -43,28 +43,14 @@ function App() {
         <Navbar />
 
         <Body>
-          {/* ❄️ Snowfall Effect */}
-          <Snowfall
-            color="white"
-            snowflakeCount={120}
-            style={{
-              position: "fixed",
-              width: "100vw",
-              height: "100vh",
-              zIndex: 1,
-              pointerEvents: "none",
-            }}
-          />
-
-          {/* Optional Sparkle Layer */}
-          <Sparkles />
-
           {/* Main Content */}
           <div style={{ position: "relative", zIndex: 2 }}>
             <Hero />
 
             <Wrapper>
               <Skills />
+              <Projects />
+              <Certificates />
               <Experience />
             </Wrapper>
 

@@ -125,8 +125,7 @@ const Skills = () => {
             marginBottom: "40px",
           }}
         >
-          Here are some of my skills on which I have been working on for the
-          past 2 years.
+          Languages, technologies, and core concepts I use to build reliable web applications.
         </Desc>
 
         <SkillsContainer>

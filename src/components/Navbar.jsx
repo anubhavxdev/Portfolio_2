@@ -131,7 +131,7 @@ const Navbar = () => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/">Anubhav Jaiswal</NavLogo>
+        <NavLogo to="/">Ananya Jaiswal</NavLogo>
 
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
           <MenuRounded style={{ color: 'inherit' }} />
@@ -140,16 +140,18 @@ const Navbar = () => {
         <NavItems>
         <NavLink href="#About">About</NavLink>
           <NavLink href="#Skills">Skills</NavLink>
-          <NavLink href="#Experience">Experience</NavLink>
           <NavLink href="#Projects">Projects</NavLink>
+          <NavLink href="#Certificates">Certificates</NavLink>
+          <NavLink href="#Experience">Training</NavLink>
           <NavLink href="#Education">Education</NavLink>
         </NavItems>
 
         <MobileMenu isOpen={isOpen}>
           <NavLink onClick={() => setIsOpen(!isOpen)} href="#About">About</NavLink>
-          <NavLink onClick={() => setIsOpen(!isOpen)} href="#skills">Skills</NavLink>
-          <NavLink onClick={() => setIsOpen(!isOpen)} href="#Experience">Experience</NavLink>
+          <NavLink onClick={() => setIsOpen(!isOpen)} href="#Skills">Skills</NavLink>
           <NavLink onClick={() => setIsOpen(!isOpen)} href="#Projects">Projects</NavLink>
+          <NavLink onClick={() => setIsOpen(!isOpen)} href="#Certificates">Certificates</NavLink>
+          <NavLink onClick={() => setIsOpen(!isOpen)} href="#Experience">Training</NavLink>
           <NavLink onClick={() => setIsOpen(!isOpen)} href="#Education">Education</NavLink>
           <GithubButton href={Bio.github} target="_blank" style={{ background: theme.primary, color: theme.text_primary,}}>Github Profile</GithubButton>
         </MobileMenu>
